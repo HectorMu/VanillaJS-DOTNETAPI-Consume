@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Api test</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navHeader"><a href="#">RESTAPI C# Y SQLSERVER</a></div>
+        <div class="navMenu">
+            <ul class="navlinks">
+                <li class="link"><a href="#">About</a></li>
+                <li class="link"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="align-items">
+        
+            <div id="addForm" class="margin-top-1">
+                <div id="alert" class="alert margin-top-2 display-none"></div>
+                <div class="card">
+                    <h1 >Agregar Alumno</h1>
+                    <form>
+                        <input type="text" placeholder="Nombre" class="input-style margin-top-1" id="txtNombre">
+                        <input type="text" placeholder="Carrera" class="input-style margin-top-1" id="txtCarrera">
+                        <input type="text" placeholder="Semestre" class="input-style margin-top-1" id="txtSemestre">
+                        <input type="number" placeholder="Saldo" class="input-style margin-top-1" id="txtSaldo">
+                        <button class="button" id="btnGuardar" type="submit">Guardar</button>
+                    </form>
+                </div>
+           
+            </div>
+            <div id="searchSection" class="margin-top-1">
+                <div class="card">
+                    <h1 class="margin-top-1">Buscar alumno</h1>
+                    <input type="text" placeholder="Buscar por ID" class="input-style" id="search">
+                    <div id="Alumnos"></div>
+                </div>
+                
+            </div>
+        </div>  
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h2 class="footer-section-name text-center">Contact me</h2>
+            <div class="footer-section-content margin-top-2">
+                <input type="text" placeholder="Email" class="input-style">
+                <textarea  class="input-style margin-top-1" placeholder="Message" cols="30" rows="5"></textarea>
+                <button class="submit-button">Send</button>
+            </div>
+            <div class="footer-section-content margin-top-2">
+                <h2 class="footer-section-name text-center">
+                    We will happy to hear you! ;)
+                </h2> 
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2 class="footer-section-name text-center">Follow me</h2>
+            <div class="footer-section-content">
+                <div class="item-list"> 
+                    <ul>
+                        <li class="list-item"><h3>Facebook</h3></li>
+                        <li class="list-item"><p>wwww.facebook.com/dick</p></li>
+                        <li class="list-item"><h3>Youtube</h3></li>
+                        <li class="list-item"><p>www.youtube.com/dick</p></li>
+                        <li class="list-item"><h3>Linked in</h3></li>
+                        <li class="list-item"><p>www.linknd.com/dick</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-line"> 
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
