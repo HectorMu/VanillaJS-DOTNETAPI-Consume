@@ -11,7 +11,10 @@ search.addEventListener('keyup',async()=>{
 })
 
 const obtenerAlumnos = async (id) =>{
-    const response = await fetch(`http://localhost:84/Principal/ConsultarSQLServer?Matricula=${id}`)
+    //development server api source
+    //const response = await fetch(`http://localhost:84/Principal/ConsultarSQLServer?Matricula=${id}`)
+    //azure API REST with AZURE SQL server database
+    const response = await fetch(`https://apirestsqlserver20211019194547.azurewebsites.net/Principal/ConsultarSQLServer?Matricula=${id}`)
     const alumnos = await response.json();
     return alumnos;
 }
@@ -47,17 +50,16 @@ btnGuardar.addEventListener('click',async(e)=>{
     e.preventDefault()
     alertdiv.classList.remove('display-none')
     alertdiv.innerText="Guardado"
-    
     await guardarAlumno(Nombre.value,Carrera.value,Semestre.value,Saldo.value)
-
-   
-     
 })
 
 const guardarAlumno = async(nombre,carrera,semestre,saldo) =>{
-    let url = `http://localhost:84/Principal/AlmacenarSQLServer?Nombre=${nombre}&Carrera=${carrera}&Semestre=${semestre}&Saldo=${saldo}`
+    //development server source
+    //let url = `http://localhost:84/Principal/AlmacenarSQLServer?Nombre=${nombre}&Carrera=${carrera}&Semestre=${semestre}&Saldo=${saldo}`
+    //azure API REST with AZURE SQL server database
+    let url = `https://apirestsqlserver20211019194547.azurewebsites.net/AlmacenarSQLServer?Nombre=${nombre}&Carrera=${carrera}&Semestre=${semestre}&Saldo=${saldo}`
     const response = await fetch(url)
-    const result = response.json()
+    const result = await response.json()
     console.log(result)
     return result
 }
