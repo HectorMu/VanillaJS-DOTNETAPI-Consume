@@ -22,14 +22,14 @@
         <div class="align-items">
         
             <div id="addForm" class="margin-top-1">
-                <div id="alert" class="alert margin-top-2 display-none"></div>
+                <div id="alert" class=" margin-top-2 display-none"></div>
                 <div class="card">
                     <h1 >Agregar Alumno</h1>
                     <form>
-                        <input type="text" placeholder="Nombre" class="input-style margin-top-1" id="txtNombre">
-                        <input type="text" placeholder="Carrera" class="input-style margin-top-1" id="txtCarrera">
-                        <input type="text" placeholder="Semestre" class="input-style margin-top-1" id="txtSemestre">
-                        <input type="number" placeholder="Saldo" class="input-style margin-top-1" id="txtSaldo">
+                        <input type="text" placeholder="Nombre" class="input-style margin-top-1" id="txtNombre"  required>
+                        <input type="text" placeholder="Carrera" class="input-style margin-top-1" id="txtCarrera" required>
+                        <input type="text" placeholder="Semestre" class="input-style margin-top-1" id="txtSemestre" required>
+                        <input type="number" placeholder="Saldo" class="input-style margin-top-1" id="txtSaldo" required>
                         <button class="button" id="btnGuardar" type="submit">Guardar</button>
                     </form>
                 </div>
@@ -52,7 +52,7 @@
             <div class="footer-section-content margin-top-2">
                 <input type="text" placeholder="Email" class="input-style">
                 <textarea  class="input-style margin-top-1" placeholder="Message" cols="30" rows="5"></textarea>
-                <button class="submit-button">Send</button>
+                <button class="submit-button" onclick="alert('Work in progress')">Send</button>
             </div>
             <div class="footer-section-content margin-top-2">
                 <h2 class="footer-section-name text-center">

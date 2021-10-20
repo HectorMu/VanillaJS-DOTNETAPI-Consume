@@ -55,14 +55,27 @@ body{
     padding: 10px;
     background-color: #a1a1a1;
     font-weight: bolder;
+    color:white;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .button:hover{
     background-color:white;
+    cursor: pointer;
+    color: black;
 }
-.alert{
+.alert-success{
     background-color:white;
     border: 2px solid #2123;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.alert-error{
+    background-color:rgba(243, 109, 20, 0.067);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     height: 35px;
     text-align: center;
     border-radius: 10px;
@@ -159,6 +172,7 @@ textarea::placeholder{
     font-style:normal;
     border-radius: 10px;
     background-color: #245;
+    cursor: pointer;
  
 }
 
